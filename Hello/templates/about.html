@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock title %}
+
+{% block body %}
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 fw-bold">About Us</h1>
+        <p class="lead">Empowering Web Development with Django & Bootstrap</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Our Mission</h5>
+                    <p class="card-text">
+                        We aim to simplify the process of building dynamic, secure, and scalable web applications.
+                        With Django's robust framework and Bootstrap’s responsiveness, we bring ideas to life.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Why Django?</h5>
+                    <p class="card-text">
+                        Django provides a clean design, a powerful ORM, and built-in admin interface. It's perfect
+                        for rapid development, which lets us focus on what really matters—great user experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col">
+            <div class="p-5 bg-light rounded shadow text-center">
+                <h4 class="mb-3">What’s in this Project?</h4>
+                <p>
+                    This project includes multiple pages like Home, Services, About, and Contact. It's part of a hands-on Django learning journey and a perfect foundation for full-stack development.
+                </p>
+                <a href="{% url 'contact' %}" class="btn btn-outline-primary mt-3">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
